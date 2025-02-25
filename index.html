@@ -83,24 +83,33 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 30px;
             margin: 40px 0;
         }
         .social-icon {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background: #1E1E1E;
             border-radius: 50%;
             transition: all 0.3s;
             text-decoration: none;
             overflow: hidden;
         }
+        .social-icon-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: #1E1E1E;
+            border-radius: 50%;
+            overflow: hidden;
+        }
         .social-icon:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
         .social-icon img {
             width: 30px;
@@ -120,7 +129,7 @@
         .x-space-title {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #1D9BF0;
+            color: #ffffff;
             font-weight: bold;
         }
         .x-space p {
@@ -131,8 +140,8 @@
             display: inline-flex;
             align-items: center;
             padding: 10px 25px;
-            background-color: #1D9BF0;
-            color: white;
+            background-color: #ffffff;
+            color: #000000;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
@@ -176,6 +185,14 @@
             .tagline {
                 font-size: 1.2rem;
             }
+            .social-icon {
+                width: 60px;
+                height: 60px;
+            }
+            .social-icon-inner {
+                width: 40px;
+                height: 40px;
+            }
         }
     </style>
 </head>
@@ -189,23 +206,33 @@
             <div class="social-links">
                 <!-- Telegram -->
                 <a href="https://t.me/solanahobo" target="_blank" class="social-icon" title="Telegram">
-                    <img src="telegramlogo.webp" alt="Telegram">
+                    <div class="social-icon-inner">
+                        <img src="telegramlogo.webp" alt="Telegram">
+                    </div>
                 </a>
                 <!-- X -->
                 <a href="https://x.com/solanahobo" target="_blank" class="social-icon" title="X">
-                    <img src="xlogogo.webp" alt="X">
+                    <div class="social-icon-inner">
+                        <img src="xlogogo.webp" alt="X">
+                    </div>
                 </a>
                 <!-- Discord -->
                 <a href="https://discord.gg/HUNpgE4G6Z" target="_blank" class="social-icon" title="Discord">
-                    <img src="discordlogoo.png" alt="Discord">
+                    <div class="social-icon-inner">
+                        <img src="discord logo.webp" alt="Discord">
+                    </div>
                 </a>
                 <!-- DexScreener -->
                 <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon" title="DexScreener">
-                    <img src="dex-screener-seeklogo.png" alt="DexScreener">
+                    <div class="social-icon-inner">
+                        <img src="dex-screener-seeklogo.png" alt="DexScreener">
+                    </div>
                 </a>
                 <!-- Solscan -->
                 <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon" title="Solscan">
-                    <img src="solscanlogo.png" alt="Solscan">
+                    <div class="social-icon-inner">
+                        <img src="solscanlogo.png" alt="Solscan">
+                    </div>
                 </a>
             </div>
             
