@@ -51,49 +51,6 @@
             word-break: break-all;
             text-align: center;
         }
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(90deg, #9945FF, #14F195);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-        .disclaimer {
-            font-size: 0.9rem;
-            color: #888;
-            margin-top: 50px;
-        }
-        .swap-widget {
-            background: #1E1E1E;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-        .swap-header {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #14F195;
-        }
-        .jupiter-iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 12px;
-        }
         .social-links {
             display: flex;
             justify-content: center;
@@ -118,7 +75,7 @@
             transform: translateY(-5px);
             background: linear-gradient(90deg, #9945FF, #14F195);
         }
-        .twitter-space {
+        .x-space {
             background: #1E1E1E;
             border-radius: 15px;
             padding: 20px;
@@ -128,18 +85,47 @@
             flex-direction: column;
             align-items: center;
         }
-        .twitter-space h2 {
+        .x-space h2 {
             margin-bottom: 15px;
             color: #1DA1F2;
         }
-        .twitter-space p {
+        .x-space p {
             margin-bottom: 20px;
         }
-        .twitter-space .btn {
+        .x-space .btn {
             background: #1DA1F2;
         }
-        .twitter-space .btn:hover {
+        .x-space .btn:hover {
             background: #0c85d0;
+        }
+        .swap-widget {
+            background: #1E1E1E;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .swap-header {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #14F195;
+        }
+        .jupiter-iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 12px;
+        }
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 50px;
+        }
+        .dexscreener-logo {
+            color: #00b8d4;
+        }
+        .solscan-logo {
+            color: #9945FF;
         }
         @media (max-width: 600px) {
             h1 {
@@ -147,9 +133,6 @@
             }
             .tagline {
                 font-size: 1.2rem;
-            }
-            .buttons {
-                flex-direction: column;
             }
         }
     </style>
@@ -161,32 +144,32 @@
             <h1>Solana Hobo</h1>
             <p class="tagline">Because even hobos need crypto</p>
             
-            <div class="twitter-space">
-                <h2><i class="fab fa-twitter"></i> Live Twitter Space</h2>
-                <p>Join our community discussion now!</p>
-                <a href="https://x.com/i/spaces/1BdGYqBoQVBGX" target="_blank" class="btn">
-                    <i class="fas fa-microphone"></i> Join Space
-                </a>
-            </div>
-            
             <div class="social-links">
                 <a href="https://t.me/solanahobo" target="_blank" class="social-icon" title="Telegram">
                     <i class="fab fa-telegram-plane"></i>
                 </a>
-                <a href="https://x.com/solanahobo" target="_blank" class="social-icon" title="Twitter/X">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://x.com/solanahobo" target="_blank" class="social-icon" title="X">
+                    <i class="fab fa-x-twitter"></i>
                 </a>
-                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon" title="DexScreener">
-                    <i class="fas fa-chart-line"></i>
+                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon dexscreener-logo" title="DexScreener">
+                    <i class="fas fa-chart-bar"></i>
                 </a>
-                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon" title="Solscan">
-                    <i class="fas fa-search-dollar"></i>
+                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon solscan-logo" title="Solscan">
+                    <i class="fas fa-search"></i>
                 </a>
             </div>
             
             <div class="token-address">
                 <strong>Token Address:</strong><br>
                 HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump
+            </div>
+            
+            <div class="x-space">
+                <h2><i class="fab fa-x-twitter"></i> Live X Space</h2>
+                <p>Join our community discussion now!</p>
+                <a href="https://x.com/i/spaces/1BdGYqBoQVBGX" target="_blank" class="btn">
+                    <i class="fas fa-microphone"></i> Join Space
+                </a>
             </div>
             
             <div class="swap-widget">
@@ -196,13 +179,6 @@
                     class="jupiter-iframe"
                     frameborder="0"
                 ></iframe>
-            </div>
-            
-            <div class="buttons">
-                <a href="https://jup.ag/swap/SOL-SOLBO" target="_blank" class="btn">Buy on Jupiter</a>
-                <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="btn">Buy on Raydium</a>
-                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="btn">Chart</a>
-                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="btn">Solscan</a>
             </div>
             
             <p class="disclaimer">$SOLBO is a meme coin with no intrinsic value or financial return expectation. This token is purely for entertainment and community purposes.</p>
