@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solana Hobo ($SOLBO) - Because Even Hobos Need Crypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -93,6 +94,53 @@
             border: none;
             border-radius: 12px;
         }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: #1E1E1E;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(90deg, #9945FF, #14F195);
+        }
+        .twitter-space {
+            background: #1E1E1E;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .twitter-space h2 {
+            margin-bottom: 15px;
+            color: #1DA1F2;
+        }
+        .twitter-space p {
+            margin-bottom: 20px;
+        }
+        .twitter-space .btn {
+            background: #1DA1F2;
+        }
+        .twitter-space .btn:hover {
+            background: #0c85d0;
+        }
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.5rem;
@@ -113,6 +161,29 @@
             <h1>Solana Hobo</h1>
             <p class="tagline">Because even hobos need crypto</p>
             
+            <div class="twitter-space">
+                <h2><i class="fab fa-twitter"></i> Live Twitter Space</h2>
+                <p>Join our community discussion now!</p>
+                <a href="https://x.com/i/spaces/1BdGYqBoQVBGX" target="_blank" class="btn">
+                    <i class="fas fa-microphone"></i> Join Space
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://t.me/solanahobo" target="_blank" class="social-icon" title="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://x.com/solanahobo" target="_blank" class="social-icon" title="Twitter/X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon" title="DexScreener">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon" title="Solscan">
+                    <i class="fas fa-search-dollar"></i>
+                </a>
+            </div>
+            
             <div class="token-address">
                 <strong>Token Address:</strong><br>
                 HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump
@@ -131,6 +202,7 @@
                 <a href="https://jup.ag/swap/SOL-SOLBO" target="_blank" class="btn">Buy on Jupiter</a>
                 <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="btn">Buy on Raydium</a>
                 <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="btn">Chart</a>
+                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="btn">Solscan</a>
             </div>
             
             <p class="disclaimer">$SOLBO is a meme coin with no intrinsic value or financial return expectation. This token is purely for entertainment and community purposes.</p>
