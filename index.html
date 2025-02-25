@@ -31,9 +31,9 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #9945FF, #14F195);
+            background: linear-gradient(90deg, #4D5BCE, #43D9AD);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -51,19 +51,24 @@
             word-break: break-all;
             text-align: center;
         }
+        .token-address-title {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
         .social-links {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 24px;
             margin: 40px 0;
         }
         .social-icon {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             background: #1E1E1E;
             border-radius: 50%;
             color: white;
@@ -71,32 +76,52 @@
             transition: all 0.3s;
             text-decoration: none;
         }
-        .social-icon:hover {
-            transform: translateY(-5px);
-            background: linear-gradient(90deg, #9945FF, #14F195);
+        .social-icon svg {
+            width: 30px;
+            height: 30px;
         }
         .x-space {
             background: #1E1E1E;
             border-radius: 15px;
-            padding: 20px;
+            padding: 25px;
             margin: 30px 0;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .x-space h2 {
+        .x-space-title {
+            font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #1DA1F2;
+            background: linear-gradient(90deg, #1DA1F2, #14D9FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
         }
         .x-space p {
             margin-bottom: 20px;
+            font-size: 1.2rem;
         }
-        .x-space .btn {
-            background: #1DA1F2;
+        .join-space-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #1DA1F2;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+            margin-top: 5px;
         }
-        .x-space .btn:hover {
-            background: #0c85d0;
+        .join-space-btn svg {
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+        .join-space-btn:hover {
+            transform: translateY(-3px);
         }
         .swap-widget {
             background: #1E1E1E;
@@ -121,12 +146,6 @@
             color: #888;
             margin-top: 50px;
         }
-        .dexscreener-logo {
-            color: #00b8d4;
-        }
-        .solscan-logo {
-            color: #9945FF;
-        }
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.5rem;
@@ -145,30 +164,52 @@
             <p class="tagline">Because even hobos need crypto</p>
             
             <div class="social-links">
+                <!-- Telegram Logo -->
                 <a href="https://t.me/solanahobo" target="_blank" class="social-icon" title="Telegram">
-                    <i class="fab fa-telegram-plane"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#26A5E4">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.823-.962 4.039-1.354 5.481-.168.623-.336 1.506-.683 1.732-.347.226-1.013.218-1.455.128-.25-.05-1.17-.488-1.657-.787-.575-.352-1.104-.816-1.589-1.27-.466-.436-.49-.673-.119-1.13.122-.15.679-.671 1.326-1.271.648-.6 1.189-1.115 1.297-1.235.219-.241.408-.681-.015-.967-.421-.285-1.646-1.046-2.28-1.444-.635-.398-1.353-.66-1.88-.674-1.044-.027-1.899.731-1.899.731s-.595.429-1.174.866c-.58.437-1.248.97-1.377 1.169s-.15.615-.15.615l.353.228c.334.215.656.416.958.599.731.444 2.487 1.518 2.487 1.518s.605 4.097.641 4.728c.036.631.125.803.258.947.134.144.232.15.357.138.125-.013.482-.128.482-.128s2.516-2.018 3.094-2.539c.818-.739 1.678-1.473 2.012-1.82.193-.2.236-.04.263.033.027.073.233.72.361 1.138.129.418.268.87.268.87s.094.271.313.307c.219.035.438-.21.438-.21s2.099-1.885 2.897-2.616c.797-.731 1.55-1.423 1.797-1.673s.284-.36.284-.52c0-.16.002-.584-.027-.751-.03-.166-.165-.387-.317-.459-.151-.072-3.256-1.295-3.256-1.295z"/>
+                    </svg>
                 </a>
+                <!-- X Logo -->
                 <a href="https://x.com/solanahobo" target="_blank" class="social-icon" title="X">
-                    <i class="fab fa-x-twitter"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
                 </a>
-                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon dexscreener-logo" title="DexScreener">
-                    <i class="fas fa-chart-bar"></i>
+                <!-- DexScreener Logo -->
+                <a href="https://dexscreener.com/solana/e2pnbtseecyi214g6reyprrfmzj9hyd5jic1ufcokydn" target="_blank" class="social-icon" title="DexScreener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00B8D4">
+                        <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 10h10v2H7v-2zm0 4h7v2H7v-2z"/>
+                        <path d="M19 19H5V5h14v14zM21 3H3v18h18V3zM7 16h7v-2H7v2zm0-4h10V10H7v2z" fill-opacity="0.3"/>
+                    </svg>
                 </a>
-                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon solscan-logo" title="Solscan">
-                    <i class="fas fa-search"></i>
+                <!-- Solscan Logo -->
+                <a href="https://solscan.io/token/HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump" target="_blank" class="social-icon" title="Solscan">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="solscanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#9945FF" />
+                                <stop offset="100%" stop-color="#8752F3" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12.5v3h2v-3h-2zm0 4v7h2v-7h-2z" fill="url(#solscanGradient)"/>
+                    </svg>
                 </a>
             </div>
             
             <div class="token-address">
-                <strong>Token Address:</strong><br>
+                <span class="token-address-title">Token Address:</span>
                 HvQNWWzz6gPK8FqmJVEsewYC2FFzpTvUkFLSqwLPpump
             </div>
             
             <div class="x-space">
-                <h2><i class="fab fa-x-twitter"></i> Live X Space</h2>
+                <div class="x-space-title">Live X Space</div>
                 <p>Join our community discussion now!</p>
-                <a href="https://x.com/i/spaces/1BdGYqBoQVBGX" target="_blank" class="btn">
-                    <i class="fas fa-microphone"></i> Join Space
+                <a href="https://x.com/i/spaces/1BdGYqBoQVBGX" target="_blank" class="join-space-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                    </svg>
+                    Join Space
                 </a>
             </div>
             
